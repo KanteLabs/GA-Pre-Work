@@ -1,28 +1,58 @@
 /*Color Palette:
+R: 250
+G: 214
+B: 35
+#FAD623
+
 R: 224
-G: 38
-B: 25
-#E02619
+G: 11
+B: 36
+#E00B24
 
-R: 134
-G: 167
-B: 173
-#86A7AD
-
-R: 245
-G: 235
-B: 188
-#F5EBBC
+R: 3
+G: 3
+B: 3
+#030303
  
-R: 6
-G: 46
-B: 69
-#062E45
-
 Fonts: Lobster, Slabo+27px
 */
+div.home_grid ul{
+    display: flex;
+}
+li{
+    margin: 1em;
+}
+div.grid{
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-body{
-    background: #6699CC;
-    opacity: 0.8;
+div.overlay_one{
+    opacity: 0.2;
+    background: #FAD623;
+    width: 100%;
+    height: 100%;
+}
+
+.grid.overlay_two{
+    opacity: 0.2;
+    background: #E00B24;
+    width: 100%;
+    height: 100%;
+}
+
+.george{
+    background: url(images/george.png);
+}
+.elaine{
+    background: url(images/george.png);
+}
+.kramer{
+    background: url(images/george.png);
+}
+.jerry{
+    background: url(images/george.png);
 }
