@@ -90,16 +90,18 @@ div ul:nth-child(2) li img{
     width: 854px;
 }
 .show_info{
-text-align: center;
-width: 450px;
-margin: 0 auto;
-margin-bottom: 5em;
-}
-div.show_info h1, div.show_info h2{
 
+text-align: center;
+
+width: 450px;
+
+margin: 0 auto;
+
+margin-bottom: 5em;
 }
 div.show_info p{
-text-align: justify;
+
+text-align: justify;
 }
 .george{
     background: url(images/george.jpg);
@@ -127,7 +129,7 @@ div.overlay_one:hover, div.overlay_two:hover{
 /* Modal Information */
 .modal-window {
 	position:fixed;
-  background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5);
 	top:0;
 	right:0;
 	bottom:0;
@@ -135,8 +137,6 @@ div.overlay_one:hover, div.overlay_two:hover{
 	z-index:999;
 	opacity:0;
 	pointer-events:none;
-	-webkit-transition:all 0.3s;
-	-moz-transition:all 0.3s;
 	transition:all 0.3s;
 }
 .modal-window:target {
