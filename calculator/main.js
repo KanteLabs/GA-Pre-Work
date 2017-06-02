@@ -24,11 +24,7 @@ function counter1(event){
 
 function menuControl(event){
     name = (event);
-    abacus = document.getElementByClassName("abacus_circle");
     if(name == "clear"){
-        abacus.className = "abacus_circle";
-        console.log(name)
-    }else{
-        console.log("do nothing")
+        location.reload()
     }
 }
