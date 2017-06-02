@@ -24,8 +24,8 @@ function counter1(event){
 
 function menuControl(event){
     name = (event);
-    abacus = document.getElementsByClassName("abacus_circle clicked")
     if(name == "clear"){
+        abacus = document.getElementsByClassName("abacus_circle clicked")
         row1 = 0;
         console.log(row1)
         for(var i = 00; i < abacus.length; i++){
@@ -36,6 +36,13 @@ function menuControl(event){
                     abacus[k].className = "abacus_circle"
                 }
             }
+        }
+    }else if(name=="populate"){
+        abacus = document.getElementsByClassName("abacus_circle")
+        row1 = 81;
+        console.log(row1)
+        for(var k = 00; k < abacus.length; k++){
+            abacus[k].className = "abacus_circle clicked"
         }
     }
 }
