@@ -1,0 +1,16 @@
+.abacus_circle{
+    width: 150px;
+    height: 150px;
+    background: black;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+ul li, ul li div{
+    display: inline-block;
+    list-style: none;
+}
+
+.abacus_circle:hover{
+    opacity: 1;
+}
