@@ -24,7 +24,18 @@ function counter1(event){
 
 function menuControl(event){
     name = (event);
+    abacus = document.getElementsByClassName("abacus_circle clicked")
     if(name == "clear"){
-        location.reload()
+        row1 = 0;
+        console.log(row1)
+        for(var i = 00; i < abacus.length; i++){
+            abacus[i].className = "abacus_circle"
+            for(var j = 00; j < abacus.length; j++){
+                abacus[j].className = "abacus_circle"
+                for(var k = 00; k < abacus.length; k++){
+                    abacus[k].className = "abacus_circle"
+                }
+            }
+        }
     }
 }
