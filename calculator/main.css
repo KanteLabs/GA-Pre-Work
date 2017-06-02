@@ -1,9 +1,12 @@
+body{
+    max-height: 100%;
+    background: black;
+}
 .abacus_circle{
     width: 150px;
     height: 150px;
-    background: black;
+    background: white;
     border-radius: 100%;
-    opacity: 0;
 }
 
 ul li, ul li div{
@@ -12,5 +15,5 @@ ul li, ul li div{
 }
 
 .abacus_circle:hover{
-    opacity: 1;
+    background: black;
 }
