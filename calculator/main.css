@@ -1,6 +1,6 @@
 body{
     max-height: 100%;
-    background: black;
+    background: grey;
 }
 .abacus_circle{
     width: 50px;
@@ -14,6 +14,7 @@ ul li, ul li div{
     list-style: none;
 }
 
-.abacus_circle:hover{
+.abacus_circle.clicked{
     background: black;
+
 }
