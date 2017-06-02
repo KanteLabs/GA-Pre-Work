@@ -12,12 +12,23 @@ function counter1(event){
     name = (event);
     abacus = document.getElementById(name)
     if(abacus.className === "abacus_circle clicked"){
-        abacus.className = "abacus_circle"
+        abacus.className = "abacus_circle";
         row1 = row1 - 1;
         console.log(row1);
     }else if(abacus.className === "abacus_circle"){
         abacus.className += " clicked";
         row1 = row1 + 1;
         console.log(row1);
+    }
+}
+
+function menuControl(event){
+    name = (event);
+    abacus = document.getElementByClassName("abacus_circle");
+    if(name == "clear"){
+        abacus.className = "abacus_circle";
+        console.log(name)
+    }else{
+        console.log("do nothing")
     }
 }
