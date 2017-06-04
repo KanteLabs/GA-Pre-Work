@@ -23,6 +23,7 @@ function counter1(event){
         row1 = row1 + 1;
         console.log(row1);
     }
+    
 }
 
 function menuControl(event){
