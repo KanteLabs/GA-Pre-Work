@@ -1,9 +1,11 @@
 *{
     font-family: 'Indie Flower', cursive;
+    box-sizing: border-box;
 
 }
 body{
     max-height: 100%;
+    overflow: hidden;
     background: grey;
 }
 .display{
@@ -14,9 +16,11 @@ ul li .display_value{
     display: inline-block;
 }
 .display_value{
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 70px;
     background: white;
+    text-align: center;
+    font-size: 3rem;
 }
 .abacus_body{
     background: #550C18;
@@ -27,13 +31,16 @@ ul li .display_value{
     height: 65px;
     background: white;
     border-radius: 100%;
+    margin: 0.7em;
+    border: 0.3em inset #d28a5a;
 }
 .menu_circle{
     display: inline-block;
+    background: white;
 }
 .menu_circle p{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     position: relative;
     top: -0.6em;
 }
@@ -42,6 +49,6 @@ ul li{
 }
 
 .abacus_circle.clicked{
-    background: black;
+    background: #d28a5a;
 
 }
