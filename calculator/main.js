@@ -7,6 +7,7 @@ var row1 = 0,
     row7 = 0,
     row8 = 0,
     row9 = 0;
+
 var firstVal = 0,
     secondVal = 0,
     totalSum = 0;
@@ -52,8 +53,10 @@ function menuControl(event){
             abacus[k].className = "abacus_circle clicked"
         }
     }else if(name=="save"){
-        abacus = document.getElementsByClassName("abacus_circle clicked")
+        abacus = document.getElementsByClassName("abacus_circle clicked");
+        first_val = document.getElementById("first_val");
         firstVal = abacus.length;
+        first_val.innerHTML = firstVal;
         console.log(firstVal)
         for(var i = 00; i < abacus.length; i++){
             abacus[i].className = "abacus_circle"
@@ -68,10 +71,14 @@ function menuControl(event){
             }
         }
     }else if(name=="add"){
-        abacus = document.getElementsByClassName("abacus_circle clicked")
+        abacus = document.getElementsByClassName("abacus_circle clicked");
+        second_val = document.getElementById("second_val");
         secondVal = abacus.length;
+        second_val.innerHTML = secondVal;
         console.log(secondVal);
         totalSum = secondVal+firstVal;
+        final_val = document.getElementById('final_val');
+        final_val.innerHTML = totalSum;
         console.log(totalSum);
         for(var i = 00; i < abacus.length; i++){
             abacus[i].className = "abacus_circle"
@@ -87,9 +94,13 @@ function menuControl(event){
         }
     }else if(name=="minus"){
         abacus = document.getElementsByClassName("abacus_circle clicked")
+        second_val = document.getElementById("second_val");
         secondVal = abacus.length;
+        second_val.innerHTML = secondVal;
         console.log(secondVal);
         totalSum = (firstVal-secondVal);
+        final_val = document.getElementById('final_val');
+        final_val.innerHTML = totalSum;
         console.log(totalSum);
         for(var i = 00; i < abacus.length; i++){
             abacus[i].className = "abacus_circle"
@@ -105,9 +116,13 @@ function menuControl(event){
         }
     }else if(name=="multiply"){
         abacus = document.getElementsByClassName("abacus_circle clicked")
+        second_val = document.getElementById("second_val");
         secondVal = abacus.length;
+        second_val.innerHTML = secondVal;
         console.log(secondVal);
         totalSum = (firstVal*secondVal);
+        final_val = document.getElementById('final_val');
+        final_val.innerHTML = totalSum;
         console.log(totalSum);
         for(var i = 00; i < abacus.length; i++){
             abacus[i].className = "abacus_circle"
@@ -123,9 +138,13 @@ function menuControl(event){
         }
     }else if(name=="divide"){
         abacus = document.getElementsByClassName("abacus_circle clicked")
+        second_val = document.getElementById("second_val");
         secondVal = abacus.length;
+        second_val.innerHTML = secondVal;
         console.log(secondVal);
         totalSum = (firstVal/secondVal);
+        final_val = document.getElementById('final_val');
+        final_val.innerHTML = totalSum;
         console.log(totalSum);
         for(var i = 00; i < abacus.length; i++){
             abacus[i].className = "abacus_circle"
@@ -141,9 +160,13 @@ function menuControl(event){
         }
     }else if(name=="avg"){
         abacus = document.getElementsByClassName("abacus_circle clicked")
+        second_val = document.getElementById("second_val");
         secondVal = abacus.length;
+        second_val.innerHTML = secondVal;
         console.log(secondVal);
         totalSum = ((firstVal+secondVal)/2);
+        final_val = document.getElementById('final_val');
+        final_val.innerHTML = totalSum;
         console.log(totalSum);
         for(var i = 00; i < abacus.length; i++){
             abacus[i].className = "abacus_circle"

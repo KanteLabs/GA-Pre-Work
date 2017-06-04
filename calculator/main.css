@@ -1,19 +1,43 @@
+*{
+    font-family: 'Indie Flower', cursive;
+
+}
 body{
     max-height: 100%;
     background: grey;
 }
+.display{
+    display: flex;
+    justify-content: center;
+}
+ul li .display_value{
+    display: inline-block;
+}
+.display_value{
+    width: 100px;
+    height: 50px;
+    background: white;
+}
 .abacus_body{
-    background: red;
+    background: #550C18;
+    display: flex;
 }
 .abacus_circle, .menu_circle{
-    width: 50px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     background: white;
     border-radius: 100%;
 }
-
-ul li, ul li div{
+.menu_circle{
     display: inline-block;
+}
+.menu_circle p{
+    text-align: center;
+    font-size: 1.9rem;
+    position: relative;
+    top: -0.6em;
+}
+ul li{
     list-style: none;
 }
 

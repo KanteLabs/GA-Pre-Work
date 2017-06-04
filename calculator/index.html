@@ -4,23 +4,37 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
         <script src="main.js"></script>
     </head>
     <body>
-    
+        <div class="display">
+            <ul>
+                <li>
+                    <div class="display_value" id="first_val">0</div>
+                    <div class="display_value" id="second_val">0</div>
+                    <div class="display_value" id="final_val">0</div>
+                </li>
+            </ul>
+        </div>
         <div class="abacus_body">
             <div class="row" id="menu_row">
                 <ul>
                     <li>
-                        <div class="menu_circle" id="clear" onclick="menuControl(event.target.id)">Clear</div>
-                        <div class="menu_circle" id="populate" onclick="menuControl(event.target.id)">Fill</div>
-                        <div class="menu_circle" id="save" onclick="menuControl(event.target.id)">Save</div>
-                        <div class="menu_circle" id="add" onclick="menuControl(event.target.id)">+</div>
-                        <div class="menu_circle" id="minus" onclick="menuControl(event.target.id)">-</div>
-                        <div class="menu_circle" id="multiply" onclick="menuControl(event.target.id)">*</div>
-                        <div class="menu_circle" id="divide" onclick="menuControl(event.target.id)">÷</div>
-                        <div class="menu_circle" id="avg" onclick="menuControl(event.target.id)">AVG</div>
+                        <div class="menu_circle"><p  id="clear" onclick="menuControl(event.target.id)">Clear</p></div>
+                        <div class="menu_circle" id="populate" onclick="menuControl(event.target.id)"><p>Fill</p></div>
+                        <div class="menu_circle" id="save" onclick="menuControl(event.target.id)"><p>Save</p></div>
+                        <div class="menu_circle" id="add" onclick="menuControl(event.target.id)"><p>+</p></div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        
+                        <div class="menu_circle" id="minus" onclick="menuControl(event.target.id)"><p>-</p></div>
+                        <div class="menu_circle" id="multiply" onclick="menuControl(event.target.id)"><p>*</p></div>
+                        <div class="menu_circle" id="divide" onclick="menuControl(event.target.id)"><p>÷</p></div>
+                        <div class="menu_circle" id="avg" onclick="menuControl(event.target.id)"><p>AVG</p></div>
                     </li>
                 </ul>
             </div>
