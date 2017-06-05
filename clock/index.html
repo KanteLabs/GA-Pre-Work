@@ -5,11 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="main.css" rel="stylesheet">
-        <link href="main.js" rel="stylesheet">
+        <script src="main.js"></script>
     </head>
     <body>
         <div class="clock_body">
-            <progress id="timer" value="0" max="100" onload="startTimer()"></progress>
+            <progress id="timer" value="0" max="100"></progress>
+            <button type="button" onclick="callTimer()">Timer</button>
+
+            <input type="number" value="" id="set_hour" />
+            <input type="number" value="" id="set_min" />
+            <input type="number" value="" id="set_seconds" />
+            <select name="time_of_day" id="set_am_pm">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+            </select>
+            <button onclick="setAlarm()">Set Alarm</button>
         </div>
     </body>
 </html>
