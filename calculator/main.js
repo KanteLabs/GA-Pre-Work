@@ -77,6 +77,24 @@ function menuControl(event){
             abacus[k].className = "abacus_circle clicked"
             current_val.innerHTML = row1;
         }
+    }else if(name=="row_add3"){
+        abacus = document.getElementsByClassName("abacus_circle")
+        current_val = document.getElementById("current_val")
+        row1 = 36;
+        console.log(row1)
+        for(var k = 00; k < row1; k++){
+            abacus[k].className = "abacus_circle clicked"
+            current_val.innerHTML = row1;
+        }
+    }else if(name=="row_add4"){
+        abacus = document.getElementsByClassName("abacus_circle")
+        current_val = document.getElementById("current_val")
+        row1 = 45;
+        console.log(row1)
+        for(var k = 00; k < row1; k++){
+            abacus[k].className = "abacus_circle clicked"
+            current_val.innerHTML = row1;
+        }
     }else if(name=="save"){
         abacus = document.getElementsByClassName("abacus_circle clicked");
         first_val = document.getElementById("first_val");
