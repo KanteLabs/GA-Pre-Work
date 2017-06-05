@@ -21,7 +21,7 @@ ul li .display_value{
     background: rgba(0,0,0, 0.2);
     text-align: center;
     font-size: 3rem;
-    margin-right: -0.12em;
+    margin-right: -0.125em;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px inset;
     outline: none;
     border: none;
@@ -85,7 +85,7 @@ p#clear{
 .abacus_circle:hover{
     transition: 1s all ease;
     background: #d28a5a;
-    border: 1px solid #bbb;
+    border: 1px solid #d28a5a;
 }
 .menu_circle:hover{
     background: #D18478;
