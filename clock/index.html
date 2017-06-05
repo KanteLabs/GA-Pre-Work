@@ -9,12 +9,15 @@
     </head>
     <body>
         <div class="clock_body">
-            <progress id="timer" value="0" max="100"></progress>
-            <button type="button" onclick="callTimer()">Timer</button>
+            <progress id="timer" value="0" max="12"></progress>
+            <progress id="timer" value="0" max="60"></progress>
+            <progress id="timer" value="0" max="60"></progress>
+            <progress id="timer" value="0" max="1000"></progress>
+            <button type="button" onclick="setDate()">Timer</button>
 
-            <input type="number" value="" id="set_hour" />
-            <input type="number" value="" id="set_min" />
-            <input type="number" value="" id="set_seconds" />
+            <input type="number" value="" id="set_hour" min="1" max="12" maxlength="2" oninput="checkVal(this)"/>
+            <input type="number" value="" id="set_min" min="00" max="60" maxlength="2" oninput="checkVal(this)"/>
+            <input type="number" value="" id="set_seconds" min="00" max="60" maxlength="2" oninput="checkVal(this)"/>
             <select name="time_of_day" id="set_am_pm">
                 <option value="am">AM</option>
                 <option value="pm">PM</option>
