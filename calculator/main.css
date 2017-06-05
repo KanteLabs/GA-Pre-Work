@@ -1,12 +1,15 @@
 *{
     font-family: 'Indie Flower', cursive;
     box-sizing: border-box;
-
+    font-weight: bold;
+    transition: 1.5s all ease;
+    overflow: hidden;
 }
 body{
     max-height: 100%;
     overflow: hidden;
-    background: grey;
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
 }
 .display{
     display: flex;
@@ -21,28 +24,42 @@ ul li .display_value{
     background: white;
     text-align: center;
     font-size: 3rem;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    margin-right: -0.15em;
 }
 .abacus_body{
-    background: #550C18;
+    max-width: 1500px;
     display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 3px;
+    background: linear-gradient( #64222D, #550c18);
+    box-shadow: 0px 4px #62202b, 0px 20px 20px rgba(0, 0, 0, 0.2);
+    user-select: none;
 }
 .abacus_circle, .menu_circle{
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     background: white;
     border-radius: 100%;
     margin: 0.7em;
     border: 0.3em inset #d28a5a;
+    box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .menu_circle{
     display: inline-block;
     background: white;
 }
 .menu_circle p{
-    text-align: center;
-    font-size: 1.7rem;
-    position: relative;
-    top: -0.6em;
+    
+text-align: center;
+    
+font-size: 1.7rem;
+    
+position: relative;
+    
+top: -0.6em;
 }
 ul li{
     list-style: none;
@@ -50,5 +67,14 @@ ul li{
 
 .abacus_circle.clicked{
     background: #d28a5a;
-
+    overflow: hidden;
+}
+.abacus_circle:active{
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+    position: relative;
+}
+.abacus_circle:hover, .menu_circle:hover{
+    transition: 1.5s all ease;
+    background: #d28a5a;
 }

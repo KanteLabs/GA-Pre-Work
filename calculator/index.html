@@ -11,7 +11,7 @@
     <body>
         <div class="display">
             <ul>
-                <li>
+                <li class="display_hold">
                     <div class="display_value" id="current_val">0</div>
                     <div class="display_value" id="first_val">0</div>
                     <div class="display_value" id="second_val">0</div>
@@ -21,7 +21,7 @@
         </div>
         <div class="abacus_body">
             <div class="row" id="menu_row">
-                <ul>
+                <ul  class="menu_list">
                     <li>
                         <div class="menu_circle"><p id="clear" onclick="menuControl(event.target.id)">Clear</p></div>
                         <div class="menu_circle"><p id="populate" onclick="menuControl(event.target.id)">Fill</p></div>
@@ -29,7 +29,7 @@
                         <div class="menu_circle"><p id="add" onclick="menuControl(event.target.id)">+</p></div>
                     </li>
                 </ul>
-                <ul>
+                <ul  class="menu_list">
                     <li>
                         
                         <div class="menu_circle"><p id="minus" onclick="menuControl(event.target.id)">-</p></div>
