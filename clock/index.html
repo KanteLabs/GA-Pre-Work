@@ -9,10 +9,10 @@
     </head>
     <body>
         <div class="clock_body">
-            <progress id="timer" value="0" max="12"></progress>
-            <progress id="timer" value="0" max="60"></progress>
-            <progress id="timer" value="0" max="60"></progress>
-            <progress id="timer" value="0" max="1000"></progress>
+            <progress id="hour_bar" value="0" max="24"></progress>
+            <progress id="min_bar" value="0" max="60"></progress>
+            <progress id="sec_bar" value="0" max="60"></progress>
+            <progress id="ms_bar" value="0" max="1496695250887000"></progress>
             <button type="button" onclick="setDate()">Timer</button>
 
             <input type="number" value="" id="set_hour" min="1" max="12" maxlength="2" oninput="checkVal(this)"/>
