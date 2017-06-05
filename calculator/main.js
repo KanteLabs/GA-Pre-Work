@@ -27,7 +27,7 @@ function counter1(event){
         current_val.innerHTML = row1;
         console.log(row1);
     }
-    
+   
 }
 
 function menuControl(event){
