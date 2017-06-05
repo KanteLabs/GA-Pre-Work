@@ -41,7 +41,7 @@ function setDate(){
     progressBar_hour.value = hours;
     progressBar_min.value = minutes;
     progressBar_sec.value = seconds;
-    progressBar_ms.value = new Date();
+    progressBar_ms.value = ms;
 
 }
 
