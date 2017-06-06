@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     transition: .5s all ease;
+    font-family: 'Cormorant SC', serif;
 }
 body{
 }
@@ -30,10 +31,10 @@ a.back_button, a.forward_button {
 }
 
 a.back_button{
-    margin-left: 0.1em;
+    margin-left: 0.09em;
 }
 a.forward_button {
-    margin-left: 6.7em;
+    margin-left: 6.8em;
 }
 
 div#video {
@@ -70,6 +71,66 @@ a[href="#videolink"]:hover{
 a.back_button:hover, a.forward_button:hover{
     color: rgba(255, 255, 255, 1);
 }
-#videolink{
+.gallery{text-align: center;}
+ul li{list-style: none;max-width: 350px;max-height: 250px;/* text-align: center; */margin: 1em;display: inline-block;}
+ul li .thumbnail{}
 
+.info_section{margin-top: 18em;margin-bottom: 20em;}
+
+.blurb{text-align: center;}
+.blurb h1{
+}
+.blurb p:nth-child(2){text-align: justify;width: 500px;margin: auto;}
+.blurb p:nth-child(3){font-size: 3em;word-spacing: 0.5em;letter-spacing: 3px;}
+
+div.img_holder#islands {width: 350px;height: 200px;}
+div.img_holder#mountains {width: 350px;height: 200px;}
+div.img_holder#deserts {width: 350px;height: 200px;position: relative;top: -5em;}
+div.img_holder#jungle {width: 350px;height: 200px;}
+
+div.thumbnail p {
+    text-align: justify;
+    line-height: 170%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+#islands{
+    background: url("http://img.cinemablend.com/quill/c/0/1/4/7/a/c0147a3b66662a49db403e6d36cf2bef2ce9e1a8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+#mountains{
+    background: url("https://ichef.bbci.co.uk/images/ic/976x549_b/p04fglh7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    top: -1.7em;
+}
+#jungle{
+    background: url("http://www.telegraph.co.uk/content/dam/tv/2016/11/18/JS113143790-planet-earth-jaguar-large_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+#deserts{
+    background: url("http://cdn.images.express.co.uk/img/dynamic/20/590x/secondary/PLANET-EARTH-2-RED-FOX-717745.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+p.p_deserts {
+    position: relative;
+    top: -5em;
+}
+
+p.p_mountains {
+    position: relative;
+    top: -1.7em;
 }
