@@ -4,24 +4,38 @@
         <title>Timer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
         <script src="main.js"></script>
     </head>
     <body>
         <div class="clock_body">
-            <progress id="hour_bar" value="0" max="24"></progress>
-            <progress id="min_bar" value="0" max="60"></progress>
-            <progress id="sec_bar" value="0" max="60"></progress>
-            <button type="button" onclick="setDate()">Timer</button>
-
-            <input type="number" value="" id="set_hour" min="1" max="12" maxlength="2" oninput="checkVal(this)"/>
-            <input type="number" value="" id="set_min" min="00" max="60" maxlength="2" oninput="checkVal(this)"/>
-            <input type="number" value="" id="set_seconds" min="00" max="60" maxlength="2" oninput="checkVal(this)"/>
-            <select name="time_of_day" id="set_am_pm">
-                <option value="am">AM</option>
-                <option value="pm">PM</option>
-            </select>
-            <button onclick="setAlarm()">Set Alarm</button>
+            <ul class="progress_holder">
+                <li>
+                    <progress id="hour_bar" value="0" max="24"></progress>
+                    <div class="display" id="hour_val"></div>
+                </li>
+                <li>
+                    <progress id="min_bar" value="0" max="60"></progress>
+                    <div class="display" id="min_val"></div>
+                </li>
+                <li>
+                    <progress id="sec_bar" value="0" max="60"></progress>
+                    <div class="display" id="sec_val"></div>
+                </li>
+            </ul>
+            
+            <ul class="alarm holder">
+                <li>
+                    <input type="number" value="" id="set_hour" min="0" max="12" maxlength="2" oninput="checkVal(this)"/>
+                    <input type="number" value="" id="set_min" min="00" max="60" maxlength="2" oninput="checkVal(this)"/>
+                    <select name="time_of_day" id="set_am_pm">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+                    <div type="button" onclick="setAlarm()">Set Alarm</div>
+            </li>
+            </ul>
         </div>
     </body>
 </html>
