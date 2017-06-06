@@ -56,9 +56,9 @@ function setDate(set_hour, set_min, set_am_pm){
     min_val.innerHTML = minutes;
     sec_val.innerHTML = seconds;
 
-    if(set_hour==hour_val && set_min==minutes && set_am_pm=="am"){
+    if(set_hour==hours && set_min==minutes && set_am_pm=="am"){
         console.log("alarm");
-    }else if(set_hour==hour_val && set_min==minutes && set_am_pm==="pm"){
+    }else if(set_hour==hours && set_min==minutes && set_am_pm==="pm"){
         console.log("pm alarm");
     }
 
