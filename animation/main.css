@@ -4,9 +4,9 @@
 
 body {
   background: linear-gradient(225deg, #000000, rgba(0, 0, 0, 0.9));
-  background-size: 800%, 800%;
+  background-size: 1000%, 1000%;
   background-repeat: repeat;
-animation: bodyAnimate 60s ease infinite;
+  animation: bodyAnimate 60s ease infinite;
  }
  @keyframes bodyAnimate { 
     0%{background-position:0% 26%}
@@ -16,7 +16,9 @@ animation: bodyAnimate 60s ease infinite;
 
 textarea {
   width: 650px;
-  height: 50px; }
+  height: 50px; 
+  border: 1px solid black;
+  }
 
 p {
   position: relative;
@@ -49,7 +51,3 @@ div[onclick="move_text()"], div[onclick="clear_text()"] {
   margin-left: 1em;
   margin-right: 1em;
   }
-
-#svg_hold{
-  position: absolute;
-}
