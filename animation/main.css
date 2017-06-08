@@ -1,5 +1,5 @@
 * {
-  transition: 1s all ease-in-out; 
+  /*transition: 1s all ease-in-out; */
 }
 
 body {
@@ -41,4 +41,6 @@ div[onclick="move_text()"], div[onclick="clear_text()"] {
   margin-right: 1em;
   }
 
-/*# sourceMappingURL=main.css.map */
+#svg_hold{
+  position: absolute;
+}
