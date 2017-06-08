@@ -1,16 +1,20 @@
 * {
-  transition: 1s all ease-in-out; }
+  transition: 1s all ease-in-out; 
+}
 
 body {
-  overflow: hidden; }
+  background: rgba(0, 0, 0, 0.9);
+ }
 
 textarea {
   width: 650px;
-  height: 150px; }
+  height: 50px; }
 
 p {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  /* color: rgba(255, 255, 255, 0.2); */
+}
 
 .form {
   display: flex;
@@ -18,15 +22,23 @@ p {
   flex-direction: column;
   align-items: center;
   }
-
-div[onclick="move_text()"] {
+.controls{
+  display: flex;
+  align-self: center;
+}
+div[onclick="move_text()"], div[onclick="clear_text()"] {
   cursor: pointer;
   background: rgba(92, 26, 27, 0.8);
   box-shadow: 0px 5px 0px 0px #5C1A1B;
   text-align: center;
   color: white;
-  padding: 1em;
+  padding: 0.5em;
   font-size: 1.5em;
+  width: 4em;
+  height: 1em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   }
 
 /*# sourceMappingURL=main.css.map */

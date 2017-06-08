@@ -5,9 +5,10 @@ function move_text(){
     text = text.split(" ");
 
     for(var i = 0; i <text.length; i++){
+        var svg = document.getElementById("canvas");
         var line = document.createElement("p");
         line.className = "line";
-        document.body.appendChild(line);
+        svg.appendChild(line);
 
         var lines = document.getElementsByClassName("line");
         lines[i].innerHTML = text[i] + " ";
@@ -20,7 +21,8 @@ function move_text(){
         for(var i = 0; i<lines.length; i++){
             lines[i].style.left = Math.random() * 250 + "px";
             lines[i].style.top = Math.random() * 250 + "px";
+            lines[i].style.fontSize = Math.random() * 42 + 'px';
+            lines[i].style.color = "rgba(255, 255, 255," + Math.random()+")";
         }
     }
 }
-
