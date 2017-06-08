@@ -23,7 +23,6 @@ function move_text(){
             lines[i].style.color = "rgba(255, 255, 255," + Math.random()+")";
             lines[i].style.transition = "all 2.5s";
         }
-        var id = setInterval(move(lines), 5);
     }
 }
 function key_trigger(e){
