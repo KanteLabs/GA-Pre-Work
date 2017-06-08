@@ -1,3 +1,6 @@
+*{
+  transition: 1s all ease-in-out;
+}
 body{
   // background:#141414;
   overflow:hidden;
@@ -8,4 +11,5 @@ textarea{
 }
 p{
   position: relative;
+  display: inline-block;
 }

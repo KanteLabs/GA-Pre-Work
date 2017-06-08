@@ -1,3 +1,6 @@
+* {
+  transition: 1s all ease-in-out; }
+
 body {
   overflow: hidden; }
 
@@ -6,6 +9,7 @@ textarea {
   height: 250px; }
 
 p {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
