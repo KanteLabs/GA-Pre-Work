@@ -25,13 +25,3 @@ function move_text(){
         }
     }
 }
-function clear_text(){
-    var input_text =document.getElementById("input_text");
-    var text = input_text.value;
-
-    input_text.value = " ";
-    input_text.innerHTML = " ";
-    input_text.textContent = " ";
-    text = " ";
-
-}
