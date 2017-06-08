@@ -19,9 +19,9 @@ function move_text(){
         for(var i = 0; i<lines.length; i++){
             lines[i].style.left = Math.random() * 250 + "px";
             lines[i].style.top = Math.random() * 250 + "px";
-            lines[i].style.fontSize = Math.random() * 42 + 'px';
+            lines[i].style.fontSize = Math.random() * 50 + 'px';
             lines[i].style.color = "rgba(255, 255, 255," + Math.random()+")";
-            lines[i].style.transition = "all " + Math.random() * 1.8 +"s";
+            lines[i].style.transition = "all " + Math.random() * 5 +"s";
         }
     }
 }
