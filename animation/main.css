@@ -6,10 +6,19 @@ body {
 
 textarea {
   width: 650px;
-  height: 250px; }
+  height: 150px; }
 
 p {
   position: relative;
   display: inline-block; }
+
+.form {
+  display: flex;
+  justify-content: center; }
+
+div[onclick="move_text()"] {
+  cursor: pointer;
+  background: rgba(127, 149, 209, 0.8);
+  box-shadow: 4px 4px 0px 0px #7f95d1; }
 
 /*# sourceMappingURL=main.css.map */
