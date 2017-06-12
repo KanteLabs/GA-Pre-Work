@@ -4,12 +4,11 @@
 html {
     width: 100%;
     height: 100%;
-    overflow: hidden;
     font-family: 'Modern Sans', Verdana;
 }
 
 body{
-    background: #000;
+    background: red;
 }
 
 header{
@@ -53,3 +52,51 @@ nav ul li:hover, li a:hover{
     z-index: 3;
 }
 video.trailer {position: absolute;top: 0;left: 0;width: 100%;}
+.albums {
+    background: url("../images/bg.png");
+    width: 450px;
+    height: 450px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.discography ul li {
+    list-style: none;
+    overflow: hidden;
+    /*position: absolute;*/
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.albums img:nth-child(1) {
+    z-index: 10;
+    position: relative;
+    width: 450px;
+    height: 398px;
+    top: 1.7em;
+}
+
+.albums img:nth-child(2) {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    top: -22em;
+    left: 1.8em;
+    z-index: 9;
+}
+
+p.title {
+    z-index: 12;
+    position: relative;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.8);
+    top: -20em;
+    text-align: center;
+    line-height: 3em;
+    left: -0.8em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    word-spacing: 1px;
+}
