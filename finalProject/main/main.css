@@ -1,15 +1,17 @@
 *, *::before, *::after {
   box-sizing: inherit;
 }
+*{
+    transition: 1s all ease;
+}
 html {
     width: 100%;
     height: 100%;
     font-family: 'Overpass', serif;
-    transition: 1s all ease;
 }
 
 body{
-    background: red;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 header{
