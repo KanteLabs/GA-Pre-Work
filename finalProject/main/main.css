@@ -9,7 +9,7 @@ html {
 }
 
 body{
-    background: grey;
+    background: #000;
 }
 
 header{
@@ -52,4 +52,4 @@ nav ul li:hover, li a:hover{
     position: absolute;
     z-index: 3;
 }
-video.trailer {position: absolute;left: 0;width: 100%;}
+video.trailer {position: absolute;top: 0;left: 0;width: 100%;}
