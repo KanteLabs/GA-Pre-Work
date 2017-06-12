@@ -5,6 +5,7 @@ html {
     width: 100%;
     height: 100%;
     font-family: 'Overpass', serif;
+    transition: 1s all ease;
 }
 
 body{
@@ -101,4 +102,13 @@ p.title {
     font-weight: bold;
     word-spacing: 5px;
     text-shadow: 0px 0px 3px #000;
+}
+
+/*Selectors*/
+
+div .albums:hover{
+    top: 1em;
+    transition: transform 1.5s cubic-bezier(.215,.61,.355,1);
+    overflow: hidden;
+    position: relative;
 }
