@@ -34,6 +34,7 @@ nav ul li {
 }
 nav ul li:hover{
     color: white;
+    cursor: pointer;
 }
 .cover{
     position: absolute;
@@ -43,4 +44,4 @@ nav ul li:hover{
     height: 100%;
     outline: 0;
 }
-video.trailer {position: absolute;top: -2.6em;left: 0;width: 100%;}
+video.trailer {position: absolute;left: 0;width: 100%;}
