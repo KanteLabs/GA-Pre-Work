@@ -1,9 +1,6 @@
 *, *::before, *::after {
   box-sizing: inherit;
 }
-*{
-    transition: 1s all ease;
-}
 html {
     width: 100%;
     height: 100%;
@@ -64,6 +61,7 @@ video.trailer {position: absolute;top: 0;left: 0;width: 100%;}
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
+    transition: all .75s ease-in-out;
 }
 
 .discography ul li {
@@ -109,8 +107,6 @@ p.title {
 /*Selectors*/
 
 div .albums:hover{
-    top: 1em;
-    transition: 1s all ease;
-    overflow: hidden;
-    position: relative;
+    transform: translateY(-1em);
+    cursor: pointer;
 }
