@@ -110,7 +110,7 @@ p.title {
 
 div .albums:hover{
     top: 1em;
-    transition: transform 1.5s cubic-bezier(.215,.61,.355,1);
+    transition: 1s all ease;
     overflow: hidden;
     position: relative;
 }
