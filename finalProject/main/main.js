@@ -3,7 +3,7 @@ showDivs(SLIDE_INDEX);
 
 function plusDivs(n){
     showDivs(SLIDE_INDEX += n);
-}
+};
 
 function showDivs(n) {
     var i = 0;
@@ -16,4 +16,13 @@ function showDivs(n) {
     }
     x[SLIDE_INDEX-1].style.display = "block";
 
-}
+};
+
+function dropdown(){
+    var drop_content = document.getElementById("drop_content");
+    if(drop_content.className === "drop_content"){
+        drop_content.className += " drop"
+    }else{
+        drop_content.className = "drop_content"
+    }
+};
