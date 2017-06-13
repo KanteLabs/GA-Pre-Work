@@ -61,24 +61,24 @@
                     <div class="albums">
                         <img src="./images/overlay.png">
                         <img src="./images/jeffery.jpeg" >
-                        <p class="title">Jeffery</p>
+                        <p class="title" onclick="modal_open(this)" id="jeffery">Jeffery</p>
                     </div>
                 </li>
                 <li>
                     <div class="albums">
                         <img src="./images/overlay.png">
                         <img src="./images/ss1.jpeg" >
-                        <p class="title">Slime Season 1</p>
+                        <p class="title" onclick="modal_open(this)" id="ss1">Slime Season 1</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
                         <img src="./images/ss2.jpeg" >
-                        <p class="title">Slime Season 2</p>
+                        <p class="title" onclick="modal_open(this)" id="ss2">Slime Season 2</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
                         <img src="./images/ss3.jpeg" >
-                        <p class="title">Slime Season 3</p>
+                        <p class="title" onclick="modal_open(this)" id="ss3">Slime Season 3</p>
                     </div>
                 </li>
             </ul>
@@ -97,6 +97,46 @@
 
          <div id="rg_modal" class="modal_overlay">
             <a href="#" id="rg_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div id="jeffery_modal" class="modal_overlay">
+            <a href="#" id="jeffery_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div id="ss1_modal" class="modal_overlay">
+            <a href="#" id="ss1_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div id="ss2_modal" class="modal_overlay">
+            <a href="#" id="ss2_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div id="ss3_modal" class="modal_overlay">
+            <a href="#" id="ss3_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
             <div class="overlay-content">
             <a href="#">About</a>
             <a href="#">Services</a>
