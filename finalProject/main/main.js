@@ -26,3 +26,12 @@ function dropdown(){
         drop_content.className = "drop_content"
     }
 };
+
+function dropdownMenu(){
+    var menu_content = document.getElementById("menu_content");
+    if(menu_content.className === "menu_content"){
+        menu_content.className += " drop"
+    }else {
+        menu_content.className = "menu_content"
+    }
+}

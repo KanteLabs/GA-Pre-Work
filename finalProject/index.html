@@ -20,20 +20,26 @@
         <header>
             <div class="small_logo"></div>
         </header>
-        <nav class="menu">
+        <nav class="menu" style="margin-top: -5em;">
             <ul>
-                <li>About</li>
-                <li class="dropdown"><a href="#" onmousedown="dropdown()">Artists</a>
-                    <ul class="drop_content" id="drop_content">
-                        <li><a href="kanye.html">1. Kanye West</a></li>
-                <li><a href="chance.html">2. Chance The Rapper</a></li>
-                <li><a href="jeffery.html">3. Young Thug</a></li>
-                <li><a href="rocky.html">4. A$AP Rocky</a></li>
-                <li><a href="kendrick.html">5. Kendrick Lamar</a></li>
-                <li><a href="travis.html">6. Travis Scott</a></li>
-                    </ul>
-                </li>
-                <li>Culture</li>
+                <li><p style="cursor: pointer; margin-left: -1em;" onmousedown="dropdownMenu()">☰</p></li>
+                <ul class="menu_content" id="menu_content">
+                        <li><a href="index.html">Home</a></li>
+                        <li>About</li>
+                        <li class="dropdown">
+                        <p style="cursor: pointer" onmousedown="dropdown()">Artists</p>
+                        <ul class="drop_content" id="drop_content">
+                            <li><a href="kanye.html">1. Kanye West</a></li>
+                            <li><a href="chance.html">2. Chance The Rapper</a></li>
+                            <li><a href="jeffery.html">3. Young Thug</a></li>
+                            <li><a href="rocky.html">4. A$AP Rocky</a></li>
+                            <li><a href="kendrick.html">5. Kendrick Lamar</a></li>
+                            <li><a href="travis.html">6. Travis Scott</a></li>
+                        </ul>
+                        <li>Culture</li>
+                        <li>Contact</li>
+                    </li>
+                </ul> 
             </ul>
         </nav>
 
