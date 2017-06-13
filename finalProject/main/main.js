@@ -35,3 +35,7 @@ function dropdownMenu(){
         menu_content.className = "menu_content"
     }
 }
+
+function modal_open(e){
+    name = event.target.id;
+}
