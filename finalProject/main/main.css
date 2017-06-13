@@ -25,6 +25,7 @@ nav{
     position: relative;
     z-index: 12;
     margin-bottom: 36em;
+    margin-top: -2em;
 }
 nav ul li, li a {
     list-style: none;
@@ -156,10 +157,23 @@ a.forward_button {
     margin-left: 6.8em;
 }
 .carousel_text{
-    display: flex; 
+    display: flex;
     justify-content: center;
+    /* position: absolute; */
+    /* width: 10px; */
+    margin-top: -4em;
+    font-size: 3.5em;
+    /* z-index: 999; */
 }
 .carousel_text a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
+    z-index: 99;
+}
+
+.carousel_text a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-size: 1.1em;
 }
