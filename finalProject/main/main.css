@@ -128,8 +128,8 @@ p.title {
     color: white;
     top: -20em;
     text-align: center;
-    line-height: 3em;
-    left: -1em;
+    line-height: 4em;
+    left: -0.8em;
     letter-spacing: 3px;
     font-weight: bold;
     word-spacing: 5px;
@@ -137,6 +137,7 @@ p.title {
     opacity: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 /*Selectors*/
@@ -144,6 +145,7 @@ p.title {
 div .albums:hover{
     transform: translateY(-1em);
     cursor: pointer;
+    overflow: hidden;
 }
 p.title:hover{
     opacity: 1;
@@ -205,15 +207,14 @@ a.forward_button {
 
 /*Modal Css*/
 .modal_overlay{
-    height: 100%;
-    width: 0;
+    height: 0%;
+    width: 100%;
     position: fixed;
     z-index: 999999999;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
+    background-color: white;
+    overflow-y: hidden;
     transition: 0.5s;
 }
 .overlay-content {

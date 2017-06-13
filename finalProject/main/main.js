@@ -41,11 +41,11 @@ function modal_open(e){
     event.preventDefault();
     name = event.target.id ;
     console.log(name);
-    document.getElementById(name+"_modal").style.width = "100%";
+    document.getElementById(name+"_modal").style.height = "100%";
 }
 function modal_close(e) {
     event.preventDefault();
     name = event.target.id ;
     console.log(name);
-    document.getElementById(name).style.width = "0%";
+    document.getElementById(name).style.height = "0%";
 }
