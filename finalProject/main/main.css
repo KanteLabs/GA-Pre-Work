@@ -122,3 +122,42 @@ div .albums:hover{
 p.title:hover{
     opacity: 1;
 }
+
+/* Main page */
+.carousel{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 90%;
+    max-height: 720px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3em;
+}
+.slides{
+    width: 100%;
+    height: 100%;
+}
+.controls{
+    position: absolute;
+}
+a.back_button, a.forward_button {
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 4;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+a.back_button{
+    margin-left: 0.09em;
+}
+a.forward_button {
+    margin-left: 6.8em;
+}
+.carousel_text{
+    position: absolute;
+}
+.carousel_text a{
+    text-decoration: none;
+}
