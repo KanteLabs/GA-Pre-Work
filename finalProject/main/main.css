@@ -26,6 +26,7 @@ nav{
     z-index: 12;
     margin-bottom: 40em;
     margin-top: -2em;
+    text-shadow: 0px 0px 3px #000;
 }
 nav ul li, li a {
     list-style: none;
