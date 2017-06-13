@@ -36,6 +36,16 @@ function dropdownMenu(){
     }
 }
 
+//These two functions triggers the opening and closing of a modal 
 function modal_open(e){
-    name = event.target.id;
+    event.preventDefault();
+    name = event.target.id ;
+    console.log(name);
+    document.getElementById(name+"_modal").style.width = "100%";
+}
+function modal_close(e) {
+    event.preventDefault();
+    name = event.target.id ;
+    console.log(name);
+    document.getElementById(name).style.width = "0%";
 }

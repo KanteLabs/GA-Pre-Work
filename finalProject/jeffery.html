@@ -51,12 +51,12 @@
                     <div class="albums">
                         <img src="./images/overlay.png">
                         <img src="./images/imup.jpeg" >
-                        <p class="title">I'm Up</p>
+                        <p class="title" onclick="modal_open(this)" id="imUp">I'm Up</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
                         <img src="./images/rg.jpeg" >
-                        <p class="title">Rich Gang</p>
+                        <p class="title" onclick="modal_open(this)" id="rg">Rich Gang</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
@@ -83,10 +83,28 @@
                 </li>
             </ul>
         </div>
-        <div id="info">
-            <div class="artist_info">
 
+
+        <div id="imUp_modal" class="modal_overlay">
+            <a href="#" id="imUp_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
             </div>
         </div>
+
+         <div id="rg_modal" class="modal_overlay">
+            <a href="#" id="rg_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+
+
     </body>
 </html>
