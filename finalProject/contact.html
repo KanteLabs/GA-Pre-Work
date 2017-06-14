@@ -7,25 +7,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
         <link href="main/main.css" rel="stylesheet">
+        <script src="main/main.js"></script>
     </head>
-    <style>
-        body{
-            background: url("images/tidal.jpeg");
-            background-repeat-x: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            overflow: hidden;
-        }
-        nav{
-            position: absolute !important;
-        }
-    </style>
+        <style>
+            body{
+                background: url("images/musicbg2.jpg");
+                background-repeat-x: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        </style>
     <body>
+        <h1 class="page_title">Contact</h1>
         <header>
             <div class="small_logo"></div>
         </header>
-        <nav class="menu" style="margin-top: 0em;">
+        <nav class="menu">
             <ul>
                 <li><p style="cursor: pointer; margin-left: -1em;" onmousedown="dropdownMenu()">☰</p></li>
                 <ul class="menu_content" id="menu_content">
@@ -47,19 +45,28 @@
                 </ul> 
             </ul>
         </nav>
-        <div class="carousel" id="carousel_controls">
-            <div class="controls">
-                <a class="back_button" onclick="plusDivs(-1)">&#10094</a>
-                <a class="forward_button" onclick="plusDivs(+1)">&#10095</a>
+
+
+        <div id="imUp_modal" class="modal_overlay">
+            <a href="#" id="imUp_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
             </div>
-            <img class="slides" src="images/placeholder.png">
-            <img class="slides" src="images/placeholder.png">
-            <img class="slides" src="images/placeholder.png">
-        </div>
-        <div class="carousel_text">
-            <a href="kanye.html">Continue</a>
         </div>
 
-        <script src="main/main.js"></script>
+         <div id="rg_modal" class="modal_overlay">
+            <a href="#" id="rg_modal" class="closebtn" onclick="modal_close(this)">&times;</a>
+            <div class="overlay-content">
+            </div>
+        </div>
+
+        <div class="contact">
+            <form>
+                <input type="text" name="full_name" placeholder="Full Name" >
+                <input type="text" name="email" placeholder="Email">
+                <textarea type="text" name="message" placeholder="Message"></textarea>
+                <button type="submit" value="SEND">SEND</button>
+            </form>
+        </div>
+        <footer>Amidou Kante&copy 2017</footer>
     </body>
 </html>
