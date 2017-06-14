@@ -12,9 +12,14 @@
         <style>
             body{
                 background: url("./images/chancebg.png");
+                background-repeat-x: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
             }
         </style>
     <body>
+        <h1 class="page_title">Chance The Rapper</h1>
         <header>
             <div class="small_logo"></div>
         </header>
@@ -23,7 +28,7 @@
                 <li><p style="cursor: pointer; margin-left: -1em;" onmousedown="dropdownMenu()">☰</p></li>
                 <ul class="menu_content" id="menu_content">
                         <li><a href="index.html">Home</a></li>
-                        <li>About</li>
+                        <li><a href="about.html">About</a></li>
                         <li class="dropdown">
                         <p style="cursor: pointer" onmousedown="dropdown()">Artists</p>
                         <ul class="drop_content" id="drop_content">
@@ -34,8 +39,8 @@
                             <li><a href="kendrick.html">5. Kendrick Lamar</a></li>
                             <li><a href="travis.html">6. Travis Scott</a></li>
                         </ul>
-                        <li>Culture</li>
-                        <li>Contact</li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </li>
                 </ul> 
             </ul>
@@ -46,7 +51,7 @@
                 <a href="#">Explore</a>
             </div>-->
             <video class="trailer" loop autoplay>
-                <source src="media/hytunes.mp4" type="video/mp4">
+                <source src="media/chance.mp4" type="video/mp4">
             </video>
         </div>
         <div id="discography"></div>
@@ -55,35 +60,30 @@
                 <li>
                     <div class="albums">
                         <img src="./images/overlay.png">
-                        <img src="./images/imup.jpeg" >
-                        <p class="title" onclick="modal_open(this)" id="imUp">I'm Up</p>
+                        <img src="./images/acidrap.jpg" >
+                        <p class="title" onclick="modal_open(this)" id="acidrap">Acid Rap</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
-                        <img src="./images/jeffery.jpeg" >
-                        <p class="title" onclick="modal_open(this)" id="jeffery">Jeffery</p>
+                        <img src="./images/coloringbook.jpg" >
+                        <p class="title" onclick="modal_open(this)" id="coloring">Coloring Book</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
-                        <img src="./images/rg.jpeg" >
-                        <p class="title" onclick="modal_open(this)" id="rg">Rich Gang</p>
+                        <img src="./images/christmas.jpg" >
+                        <p class="title" onclick="modal_open(this)" id="christmas">Merry Christmas</p>
                     </div>
                 </li>
                 <li>
                     <div class="albums">
                         <img src="./images/overlay.png">
-                        <img src="./images/ss1.jpeg" >
-                        <p class="title" onclick="modal_open(this)" id="ss1">Slime Season 1</p>
+                        <img src="./images/goodenough.jpg" >
+                        <p class="title" onclick="modal_open(this)" id="goodenough">Good Enough</p>
                     </div>
                     <div class="albums">
                         <img src="./images/overlay.png">
-                        <img src="./images/ss2.jpeg" >
-                        <p class="title" onclick="modal_open(this)" id="ss2">Slime Season 2</p>
-                    </div>
-                    <div class="albums">
-                        <img src="./images/overlay.png">
-                        <img src="./images/ss3.jpeg" >
-                        <p class="title" onclick="modal_open(this)" id="ss3">Slime Season 3</p>
+                        <img src="./images/10day.jpg" >
+                        <p class="title" onclick="modal_open(this)" id="10day">10 Day</p>
                     </div>
                 </li>
             </ul>

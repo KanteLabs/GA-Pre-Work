@@ -11,7 +11,12 @@ html {
 body{
     background: rgba(0, 0, 0, 0.8);
 }
-
+.page_title{display: flex;justify-content: center;font-size: 3em;
+color: white;
+text-shadow: 0px 0px 3px #000;
+font-weight: bold;
+letter-spacing: 1px;
+}
 nav{
     background: rgba(0, 0, 0, 0.8);
     padding: 2em 1.4em 0em 0em;
@@ -19,7 +24,7 @@ nav{
     position: fixed;
     z-index: 15;
     margin-bottom: 40em;
-    margin-top: -2em;
+    top: -2em;
     text-shadow: 0px 0px 3px #000;
     line-height: 0;
 }
@@ -65,6 +70,8 @@ nav ul li:hover, li a:hover{
     width: 100%;
     height: 100%;
     outline: 0;
+    display: flex;
+    justify-content: center;
 }
 .caption{
     position: absolute;
@@ -88,7 +95,7 @@ video.trailer {position: relative;top: 0;left: 0;width: 100%;}
     position: relative;
     width: 100%;
     height: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 10em;
 }
 
 .discography ul li {
@@ -97,6 +104,7 @@ video.trailer {position: relative;top: 0;left: 0;width: 100%;}
     display: flex;
     flex-flow: row wrap;
     margin-bottom: -4em;
+    justify-content: center;
 }
 
 .albums img:nth-child(1) {
@@ -123,7 +131,7 @@ p.title {
     color: white;
     top: -20em;
     text-align: center;
-    line-height: 4em;
+    line-height: 3em;
     left: -0.8em;
     letter-spacing: 3px;
     font-weight: bold;
