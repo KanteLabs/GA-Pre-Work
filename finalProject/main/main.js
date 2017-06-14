@@ -1,3 +1,4 @@
+//Controls the slide show
 var SLIDE_INDEX = 1;
 showDivs(SLIDE_INDEX);
 
@@ -18,6 +19,7 @@ function showDivs(n) {
 
 };
 
+//Dropdown for the menu for the different artist on the nav
 function dropdown(){
     var drop_content = document.getElementById("drop_content");
     if(drop_content.className === "drop_content"){
@@ -27,6 +29,7 @@ function dropdown(){
     }
 };
 
+//Drop down for the actual menu
 function dropdownMenu(){
     var menu_content = document.getElementById("menu_content");
     if(menu_content.className === "menu_content"){
@@ -36,7 +39,10 @@ function dropdownMenu(){
     }
 }
 
-//These two functions triggers the opening and closing of a modal 
+/*I modified W3CS school version of a modal to make it
+more efficient instead of making a function for every modal which would require over (20 functions!), I decided
+to grab the ID of the element that triggered the javasript function to run on a mouse click. This is stored in a name variable, which is passed to the getElementById statement.
+ By this doing this I am able to open and close more than 20 different modals with just two functions. */
 function modal_open(e){
     event.preventDefault();
     name = event.target.id ;
