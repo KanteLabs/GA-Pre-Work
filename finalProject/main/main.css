@@ -196,6 +196,19 @@ a.forward_button {
 .carousel_text img{
     width: 100%;
     height: 100%;
+    transform: rotate(180deg);
+}
+.carousel_text img:hover {
+    position: relative;
+}
+.carousel_text img:hover {
+    content: url(../images/logo2.png);
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform: scale(1.5);
 }
 footer{
     font-size: 1.4em;
