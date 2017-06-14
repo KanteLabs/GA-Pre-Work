@@ -188,27 +188,14 @@ a.forward_button {
 }
 .carousel_text{
     display: flex;
-    justify-content: center;
-    /* position: absolute; */
-    /* width: 10px; */
-    margin-top: -10em;
-    font-size: 1.1em;
-    /* z-index: 999; */
+    margin: 0 auto;
+    position: relative;
+    top: -10em;
+    width: 100px;
 }
-.carousel_text a{
-    text-decoration: none;
-    color: rgba(255,255,255,0.2);
-    z-index: 99;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 1em;
-    border-radius: 10px;
-}
-
-.carousel_text a:hover{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-    font-size: 1.1em;
+.carousel_text img{
+    width: 100%;
+    height: 100%;
 }
 footer{
     font-size: 1.4em;
@@ -327,7 +314,7 @@ ul.artist {list-style: none;}
 .artist li {
     display: flex;
     margin: 0em 2em;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     padding-top: 2em;
     color: white;
 }
