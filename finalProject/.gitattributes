@@ -2,3 +2,4 @@
 rocky.mp4 filter=lfs diff=lfs merge=lfs -text
 Rocky.mp4 filter=lfs diff=lfs merge=lfs -text
 kendrick.mp4 filter=lfs diff=lfs merge=lfs -text
+media/kendrick.mp4 filter=lfs diff=lfs merge=lfs -text
