@@ -11,12 +11,86 @@ html {
 body{
     background: rgba(0, 0, 0, 0.8);
 }
-.page_title{display: flex;justify-content: center;font-size: 3em;
-color: white;
-text-shadow: 0px 0px 3px #000;
-font-weight: bold;
-letter-spacing: 1px;
+
+ul li a {
+    text-decoration: none;
 }
+
+/*****Main page CSS*****/
+
+/*This allows the images that arent selected by the carousel to not be showing*/
+.carousel{
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 90%;
+    max-height: 649px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3em;
+    border: 1em solid black;
+}
+.slides{
+    width: 100%;
+    height: 100%;
+    max-height: 656px;
+}
+/*affects the positiong of the carousel controls*/
+.controls{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*Css for the back and forward button on the carousel*/
+a.back_button, a.forward_button {
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 4;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+a.back_button{
+    margin-left: 0em;
+}
+a.forward_button {
+    margin-right: 1em;
+}
+a.back_button:hover, a.forward_button:hover {
+    color: black;
+}
+/*All the carousel_text elements affect how the Tidal logo will look on the carousel and what happends if a user hovers over it*/
+.carousel_text{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: -15em;
+    width: 100px;
+}
+.carousel_text img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+.carousel_text img:hover {
+    position: relative;
+}
+.carousel_text img:hover {
+    content: url(../images/logo2.png);/*Image that replaces the current logo*/
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+/*******/
+
+
+/*Creates the nav into a small hamburger icon*/
 nav{
     background: rgba(0, 0, 0, 0.8);
     padding: 2em 1.4em 0em 0em;
@@ -37,9 +111,6 @@ nav ul li, li a {
     letter-spacing: 1px;
     transition: 0s;
 }
-ul li a {
-    text-decoration: none;
-}
 nav ul li:hover, li a:hover{
     color: white;
     cursor: pointer;
@@ -51,7 +122,7 @@ nav ul li:hover, li a:hover{
     display: inline-block;
     position: relative;
 }
-
+/*Css that controls the dropdown for menu*/
 .drop_content, .menu_content {
     display: none;
     position: relative;
@@ -63,6 +134,15 @@ nav ul li:hover, li a:hover{
     display: block;
 }
 
+/*Affects the header for each page*/
+.page_title{display: flex;justify-content: center;font-size: 3em;
+color: white;
+text-shadow: 0px 0px 3px #000;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+/*This is what allows the video to cover the an entrie section of the page*/
 .cover{
     position: relative;
     top: 0;
@@ -73,21 +153,8 @@ nav ul li:hover, li a:hover{
     display: flex;
     justify-content: center;
 }
-.caption{
-    position: absolute;
-    z-index: 3;
-}
+/*Css for the videos relative to the cover class*/
 video.trailer {position: relative;top: 0;left: 0;width: 100%;}
-.albums {
-    background: url("../images/bg.png");
-    width: 450px;
-    height: 450px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    transition: all .75s ease-in-out;
-}
 
 .discography{
     display: flex;
@@ -107,6 +174,19 @@ video.trailer {position: relative;top: 0;left: 0;width: 100%;}
     justify-content: center;
 }
 
+/*Main css for each album thumbnail, this holds the cd background*/
+.albums {
+    background: url("../images/bg.png");
+    width: 450px;
+    height: 450px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all .75s ease-in-out;
+}
+
+/*Css for the overlay that gives each album a shine effect*/
 .albums img:nth-child(1) {
     z-index: 10;
     position: relative;
@@ -114,7 +194,7 @@ video.trailer {position: relative;top: 0;left: 0;width: 100%;}
     height: 398px;
     top: 1.7em;
 }
-
+/*This is the css that controls the album image for each item*/
 .albums img:nth-child(2) {
     position: relative;
     width: 340px;
@@ -124,6 +204,7 @@ video.trailer {position: relative;top: 0;left: 0;width: 100%;}
     z-index: 9;
 }
 
+/*Controls the positioning and the effects of the album title text*/
 p.title {
     z-index: 12;
     position: relative;
@@ -143,8 +224,7 @@ p.title {
     overflow: hidden;
 }
 
-/*Selectors*/
-
+/*Next two selectors just controls the effects of hovering over the albums*/
 div .albums:hover{
     transform: translateY(-1em);
     cursor: pointer;
@@ -154,68 +234,7 @@ p.title:hover{
     opacity: 1;
 }
 
-/* Main page */
-.carousel{
-    display: flex;
-    flex-flow: row nowrap;
-    max-width: 90%;
-    max-height: 649px;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 3em;
-    border: 1em solid black;
-}
-.slides{
-    width: 100%;
-    height: 100%;
-    max-height: 656px;
-}
-.controls{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-a.back_button, a.forward_button {
-    font-size: 10em;
-    color: rgba(255, 255, 255, 0.2);
-    line-height: 4;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-}
 
-a.back_button{
-    margin-left: 0em;
-}
-a.forward_button {margin-right: 1em;}
-a.back_button:hover, a.forward_button:hover {
-    color: black;
-}
-.carousel_text{
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    top: -15em;
-    width: 100px;
-}
-.carousel_text img{
-    width: 100%;
-    height: 100%;
-    transform: rotate(180deg);
-}
-.carousel_text img:hover {
-    position: relative;
-}
-.carousel_text img:hover {
-    content: url(../images/logo2.png);
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transform: scale(1.5);
-}
 footer{
     font-size: 1.4em;
     bottom: 0;
@@ -226,7 +245,10 @@ footer{
     width: 100%;
     margin-bottom: 1em;
 }
-/*Modal Css*/
+
+/*****Modal Css****/
+
+/*By giving the modal overlay a height of 0. I can change the effect of what happens when the user calls the overaly so that it comes in from the top*/
 .modal_overlay{
     height: 0%;
     width: 100%;
@@ -244,22 +266,20 @@ footer{
     margin-top: 30px;
 }
 
+/*css for the close button*/
 .modal_overlay a {
     padding: 8px;
     text-decoration: none;
     color: #bbb;
-}
-
-.modal_overlay a:hover, .modal_overlay a:focus {
-    color: black;
-}
-
-.modal_overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 90px;
     font-weight: bold;
+}
+
+.modal_overlay a:hover, .modal_overlay a:focus {
+    color: black;
 }
 
 /*Contact page*/
